@@ -18,9 +18,9 @@
     <nav class="header-nav">
 <a class="logo link" href="" target="_blank" title="Головна сторінка"><span class="logo-type">Web</span>Studio</a>
  <ul class="site-nav list">
-     <li class="site-nav-item"><a class="element link current" href="./index.html"  >Студія</a></li>
-     <li class="site-nav-item"><a class="menu-link link" href="./portfolio.html"  >Портфоліо</a></li>
-     <li><a class="menu-item link" href="" >Контакти</a></li>
+     <li class="site-nav-item "><a class="element link current up-text" href="./index.html">Студія</a></li>
+     <li class="site-nav-item"><a class="menu-link link" href="./portfolio.html">Портфоліо</a></li>
+     <li><a class="menu-item link" href="./contacts.html">Контакти</a></li>
  </ul>
  </nav>
  <ul class="auth-nav flex list">
@@ -33,7 +33,7 @@
     <section class="hero section">
     <div class="container">
         <h1 class="hero-title">Ефективні рішення для <br>вашого бізнесу</h1>
-    <button class="hero-btn list" type="button"> Замовити послугу</button>
+    <button data-modal-open class="hero-btn list" type="button" > Замовити послугу</button>
     </div>
 </section>
 <section class="section">
@@ -75,9 +75,15 @@
     <div class="container">
     <h2 class="photo-title">Чим ми займаємося</h2>
     <ul class="photo list">
-           <li><img  width="370" src="images/image1.jpg" alt="Робочий стіл" height="294"></li>
-           <li><img  width="370" src="images/image2.jpg" alt="Робочий стіл" height="294"></li> 
-           <li><img  width="370" src="images/image3.jpg" alt="Робочий стіл" height="294"></li>
+           <li class="photo-item"><img  width="370" src="images/image1.jpg" alt="Робочий стіл" height="294">
+        <div class="photo-box"><p class="photo-text">ДЕКСТОПНІ ДОДАТКИ</p></div>
+        </li>
+           <li class="photo-item"><img  width="370" src="images/image2.jpg" alt="Робочий стіл" height="294">
+        <div class="photo-box"><p class="photo-text">МОБІЛЬНІ ДОДАТКИ</p></div>
+        </li> 
+           <li class="photo-item"><img  width="370" src="images/image3.jpg" alt="Робочий стіл" height="294">
+        <div class="photo-box"><p class="photo-text">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p></div>
+        </li>
     </ul>
     </div>
 </section>
@@ -213,5 +219,15 @@
 </div>
 </div>
 </footer>
+    <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button  type="button" class="close-btn" data-modal-close>
+            <svg clase="close-icon" width="11px" height="11px">
+                <use href="./images/icons.svg#icon-vector"></use>
+            </svg>
+        </button>
+    </div>
+</div>
+<script src="./js/modal.js"></script>
 </body>
 </html>
